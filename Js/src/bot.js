@@ -4,14 +4,14 @@ let LINE = new line();
 
 
 const auth = {
-	authToken: '',
-	certificate: '',
+	authToken: 'EIrM2z9WIkWSTkRe0iAe.gufDRztNV3t8CCzmV2YixG.PfQwkFBOYBeQKwpQkT1+pmGF9JnY3UxWbTfsplkcWuc=',
+	certificate: 'b8b66180ebacbd3abc6ebd4621a453d3f7e4f10ba534f146bf9f86c5755344ac',
 	email: '',
 	password: ''
 }
 
-let client =  new LineConnect();
-//let client =  new LineConnect(auth);
+//let client =  new LineConnect();
+let client =  new LineConnect(auth);
 
 client.startx().then(async (res) => {
 	
